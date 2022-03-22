@@ -1,0 +1,10 @@
+<div>
+  <% if (showTitle) { %>
+  <h1><%= title %></h1>
+  <% } %>
+  <form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="picture" />
+    <input type="text" name="description" value="Hello world" />
+    <button>GO!</button>
+  </form>
+</div>
